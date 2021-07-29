@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form  method="POST" action="procesa.php">
+
+        <p>usuario:</p>
+        <input type="text" name="username"  maxlength="30" >     
+
+        <p>contraseña:</p>
+        <input type="password" name="contraseña"  maxlength="30" >
+        
+        <textarea name="comentario"></textarea>
+
+    
+        <p>por favor seleccione una de las opciones:</p>
+        <br>
+        <input type="radio" name="genero" value="rock">Rock
+        <input type="radio" name="genero" value="jazz">Jazz
+        <input type="radio" name="genero" value="pop">Pop
+        
+        <p>por favor seleccione varias de las opciones:</p>
+        <br>
+        <input type="checkbox" name="genero" value="rock">Rock
+        <input type="checkbox" name="genero" value="jazz">Jazz
+        <input type="checkbox" name="genero" value="pop">Pop
+        <input type="checkbox" name="genero" value="rock">Rock
+        <input type="checkbox" name="genero" value="jazz">Jazz
+        <input type="checkbox" name="genero" value="pop">Pop
+
+        
+        <p>que dispositivo usas para ver las noticias:</p>
+        <br>
+        <select name="dispositivos">
+            <option value="pc">PC</option>
+            <option value="tablet">Tablet</option>
+            <option value="celular">Celular</option>
+            
+        </select>
+
+        <p>que dispositivo usas para ver las noticias:</p>
+        <br>
+        <select name="dispositivos" multiple="multiple">
+            <option value="pc">PC</option>
+            <option value="tablet">Tablet</option>
+            <option value="celular">Celular</option>
+            
+        </select>
+
+        <p>seleccione un archivo para subir</p>
+        <br>
+        <input type="file" name="cancionsubir"><br />
+        <input type="submit" value="subir">
+
+
+        <form action="procesa.php" method="POST">
+           <fieldset>
+               <legend>Detalle del contacto</legend>
+               <label>Email:<br>
+                <input type="text" name="email"></label><br>
+
+                <label>celular:<br>
+                <input type="text" name="celular"></label><br>
+
+                <label>Telefono:<br>
+                <input type="text" name="telefono"></label>
+            </label>
+    </fieldset>
+
+
+            
+
+
+</body>
+</html>

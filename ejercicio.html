@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 7</title>
+</head>
+
+
+<body style="font-family: Arial, Helvetica, sans-serif; text-align:center; font-size: 20px;" >
+    <h1 >Tu opiñón nos importa</h1>
+    <h3>Ayudanos a saber más de vos!</h3>
+
+    <!--Formulario-->
+    <form  method="POST" action="procesar.php" style=" padding:10px; margin-left:750px; margin-right: 740px; margin-top: 50px; box-sizing: border-box; border: 3px solid rgb(0, 0, 0); border-radius: 4px; background-color: #136f63; color: white;">
+       <!--Comienza el primer apartado--> 
+      
+      <fieldset style="width: 350px;">
+            <lebel> Nombre: 
+                    <input type="text" name="nombre" maxlength="15" placeholder="Ingresá tu nombre" required="required">
+            </lebel> 
+            <br><br>
+            <lebel>Email:  
+                <input type="mail" name="mail" placeholder="Ingresá tu correo electrónico" required="required">
+            </lebel>
+      </fieldset>
+      <!--Termina el primer apartado-->
+
+      <!--Comienza el segundo apartado--> 
+      <fieldset style="width: 350px;">
+          <legend>Reseña</legend>
+          <label>¿Cómo nos conociste?
+                <select name="deplegar">
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="google">Google</option>
+                </select>
+          </label>
+          <br><br>  
+          <label> ¿Nos visitarías otra vez?
+            <br>
+                <input type="radio" name="opciones" value="si"> Si
+                <input type="radio" name="opciones" value="no"> No
+                <input type="radio" name="opciones" value="talvez"> Tal vez
+          </label>
+          <br><br>
+          <label>
+            <textarea name="reseña" placeholder="Dejanos tu comentario" style="width: 300px; height: 150px; box-sizing: border-box;
+            border: 2px solid rgb(0, 0, 0); border-radius: 4px;"></textarea>
+          </label>
+          <br><br>
+        <!--Checkbox-->
+        <input type="checkbox" name="tilde" value="recibir" checked="checked" /> Recibir novedades por email
+        <br>
+        <!--Validar el formulario-->
+        <input type="submit" value="enviar reseña" style="text-transform: capitalize;"> 
+      </fieldset>
+      <!--Termina el segundo apartado-->
+    </form>
+    
+</body>
+</html>
